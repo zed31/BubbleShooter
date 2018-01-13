@@ -1,13 +1,24 @@
 ﻿using System;
+using BSComponent;
 using UnityEngine;
 
 public class ArrowController : MonoBehaviour {
 
     [SerializeField] private float m_speed = 4f;
+
     private Rigidbody2D m_rigidbody;
     private float m_movement = 0f;
 	
+    public float GetAngle
+    {
+        get
+        {
+            return transform.rotation.eulerAngles.z;
+        }
+    }
+
     void Start() {
+        GetComponent<SpriteRenderer>().material.color = ComponentColorGenerator.Instance.GetColor();
         m_rigidbody = GetComponent<Rigidbody2D>();
     }
 

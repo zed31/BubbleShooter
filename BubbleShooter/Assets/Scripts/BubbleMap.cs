@@ -1,16 +1,17 @@
 ﻿using System.Linq;
 using System.Collections.Generic;
-using BubbleShooter;
+using BSComponent;
 using UnityEngine;
 
 public class BubbleMap : MonoBehaviour {
 
     [SerializeField] private GameObject m_gameObjectRef;
 
-    private ComponentContainer m_bubbles = new ComponentContainer();
-    private float m_startX = -4.5f;
-    private float m_startY = 4.41f;
-    private float m_scale = 0.60f;
+    private BubbleContainer m_bubbles = new BubbleContainer();
+
+    private float m_startX = -2.95f;
+    private float m_startY = 4.61f;
+    private float m_scale = 0.40f;
 
 	// Use this for initialization
 	void Awake() {
@@ -19,7 +20,7 @@ public class BubbleMap : MonoBehaviour {
                 m_bubbles.Push(m_startX, m_startY, m_gameObjectRef);
                 m_startX += m_scale;
             }
-            m_startX = -4.5f;
+            m_startX = -2.95f;
             m_startY -= m_scale;
         }
         

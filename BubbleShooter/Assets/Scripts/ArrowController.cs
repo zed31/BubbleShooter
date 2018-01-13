@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ArrowController : MonoBehaviour {
 
@@ -16,6 +17,8 @@ public class ArrowController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        m_rigidbody.MoveRotation(m_rigidbody.rotation + m_movement * Time.fixedDeltaTime);
+        if (Math.Abs(m_rigidbody.rotation + m_movement * Time.fixedDeltaTime) < 75f) {
+            m_rigidbody.MoveRotation(m_rigidbody.rotation + m_movement * Time.fixedDeltaTime);
+        }
     }
 }

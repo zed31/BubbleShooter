@@ -25,8 +25,6 @@ public class ArrowController : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if (Math.Abs(m_movement * Time.fixedDeltaTime) < 75f) {
-            transform.Rotate(new Vector3(0f, 0f, m_movement * Time.fixedDeltaTime));
-        }
+        transform.Rotate(new Vector3(0f, 0f, m_movement * Time.fixedDeltaTime));
     }
 }

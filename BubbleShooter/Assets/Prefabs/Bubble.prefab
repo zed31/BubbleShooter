@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212268928798354494}
   - component: {fileID: 50062263336447222}
   - component: {fileID: 61865281796334312}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bubble
-  m_TagString: Untagged
+  m_TagString: Bubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

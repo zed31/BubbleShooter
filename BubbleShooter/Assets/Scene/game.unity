@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &166116360
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284703286331216, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 41353b2392af2da4082badf6d6f719d8, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &490790603
 Prefab:
   m_ObjectHideFlags: 0
@@ -581,48 +623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_firePoint: {fileID: 647740213}
---- !u!1 &1780539878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1780539879}
-  - component: {fileID: 1780539880}
-  m_Layer: 0
-  m_Name: BubbleMap
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1780539879
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1780539878}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1780539880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1780539878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 743bd8af9c2359c4e9819fd0625200e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_gameObjectRef: {fileID: 1015731565628202, guid: c88d965b47b2774489a22568018fed91,
-    type: 2}
 --- !u!1001 &2100716796
 Prefab:
   m_ObjectHideFlags: 0

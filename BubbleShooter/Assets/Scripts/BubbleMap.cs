@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using System.Collections.Generic;
 using BSComponent;
 using UnityEngine;
 
@@ -13,17 +12,32 @@ public class BubbleMap : MonoBehaviour {
     private float m_startY = 4.61f;
     private float m_scale = 0.40f;
 
+    ~BubbleMap()
+    {
+        Debug.Log("Bubble map destructor");
+    }
+
+    void InsertRowOnTop()
+    {
+        foreach (var j in Enumerable.Range(0, 16))
+        {
+            m_bubbles.Push(m_startX, m_startY, m_gameObjectRef);
+            m_startX += m_scale;
+        }
+    }
+
+    public GameObject Find(Vector2 position)
+    {
+        return m_bubbles.GetBubbleFromPosition(position);
+    }
+
 	// Use this for initialization
 	void Awake() {
         foreach (var i in Enumerable.Range(0, 14)) {
-            foreach (var j in Enumerable.Range(0, 16)) {
-                m_bubbles.Push(m_startX, m_startY, m_gameObjectRef);
-                m_startX += m_scale;
-            }
+            InsertRowOnTop();
             m_startX = -2.95f;
             m_startY -= m_scale;
         }
-        
 	}
 	
 	// Update is called once per frame
